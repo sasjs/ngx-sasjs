@@ -4,12 +4,12 @@ UI Depends on Clarity Design
 
 Package includes:
 
-## Header 
+### Header 
 
-### Logo
-### Navigation links (configurable)
-### User dropdown (with configurable items and custom on click callbacks)
+- Logo
+- Navigation links (configurable)
+- User dropdown (with configurable items and custom on click callbacks)
 
-## Login modal
+### Login modal
 
-## SAS Logs modal
+### SAS Logs modal
