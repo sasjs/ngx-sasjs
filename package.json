@@ -13,6 +13,11 @@
     "lint:silent": "npx prettier --loglevel silent --check \"projects/**/src/**/*.{ts,tsx,js,jsx,html,css,sass,less,json,yml,md,graphql}\"",
     "test": "ng test"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.0",
