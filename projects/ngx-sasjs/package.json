@@ -1,6 +1,5 @@
 {
-  "name": "ngx-sasjs",
-  "version": "0.0.1",
+  "name": "@sasjs/ngx-sasjs",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"
