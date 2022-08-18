@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 
 @Component({
   selector: 'sasjs-login-modal',
@@ -8,8 +8,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class LoginModalComponent implements OnInit {
   @Input() loginLoading: boolean = false
 
-  @Output() loginButtonClicked: EventEmitter<{ username: string, password: string }> = new EventEmitter<{ username: string, password: string }>()
-  
+  @Output() loginButtonClicked: EventEmitter<{
+    username: string
+    password: string
+  }> = new EventEmitter<{ username: string; password: string }>()
+
   username: string = ''
   password: string = ''
 

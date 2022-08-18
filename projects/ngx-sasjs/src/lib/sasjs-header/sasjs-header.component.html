@@ -1,8 +1,6 @@
 <header class="header-6">
   <div class="branding">
-    <img
-      [src]="logo"
-    />
+    <img [src]="logo" />
   </div>
   <div class="header-nav">
     <a
@@ -33,7 +31,13 @@
 
         <div class="dropdown-divider" role="separator" aria-hidden="true"></div>
 
-        <div *ngFor="let item of userDropdownItems" (click)="item.clickCallback()" clrDropdownItem>{{ item.label }}</div>
+        <div
+          *ngFor="let item of userDropdownItems"
+          (click)="item.clickCallback()"
+          clrDropdownItem
+        >
+          {{ item.label }}
+        </div>
       </clr-dropdown-menu>
     </clr-dropdown>
   </div>

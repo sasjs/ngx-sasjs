@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing'
 
-import { NgxSasjsService } from './ngx-sasjs.service';
+import { NgxSasjsService } from './ngx-sasjs.service'
 
 describe('NgxSasjsService', () => {
-  let service: NgxSasjsService;
+  let service: NgxSasjsService
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(NgxSasjsService);
-  });
+    TestBed.configureTestingModule({})
+    service = TestBed.inject(NgxSasjsService)
+  })
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+    expect(service).toBeTruthy()
+  })
+})

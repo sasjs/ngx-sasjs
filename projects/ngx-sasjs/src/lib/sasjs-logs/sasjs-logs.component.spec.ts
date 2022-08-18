@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { SasjsLogsComponent } from './sasjs-logs.component';
+import { SasjsLogsComponent } from './sasjs-logs.component'
 
 describe('SasjsLogsComponent', () => {
-  let component: SasjsLogsComponent;
-  let fixture: ComponentFixture<SasjsLogsComponent>;
+  let component: SasjsLogsComponent
+  let fixture: ComponentFixture<SasjsLogsComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SasjsLogsComponent ]
-    })
-    .compileComponents();
+      declarations: [SasjsLogsComponent]
+    }).compileComponents()
 
-    fixture = TestBed.createComponent(SasjsLogsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(SasjsLogsComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

@@ -1,7 +1,7 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { SASjsConfig } from '@sasjs/adapter';
-import moment from 'moment';
-import { SASjsRequestExtended } from './models/sasjs-request.model';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
+import { SASjsConfig } from '@sasjs/adapter'
+import moment from 'moment'
+import { SASjsRequestExtended } from './models/sasjs-request.model'
 
 @Component({
   selector: 'sasjs-logs',
@@ -11,7 +11,7 @@ import { SASjsRequestExtended } from './models/sasjs-request.model';
 export class SasjsLogsComponent implements OnInit {
   private _show: boolean = false
   private _sasjsRequests: SASjsRequestExtended[] = []
-  
+
   @Input()
   set show(value: boolean) {
     this._show = value
@@ -22,14 +22,14 @@ export class SasjsLogsComponent implements OnInit {
     this._sasjsRequests = value
     if (value) this.sasjsReqestsChanged()
   }
-  
+
   get show(): boolean {
     return this._show
   }
   get sasjsRequests(): SASjsRequestExtended[] {
     return this._sasjsRequests
   }
-  
+
   @Input() sasjsConfig: SASjsConfig | undefined
 
   @Output() showChange = new EventEmitter()
@@ -43,8 +43,7 @@ export class SasjsLogsComponent implements OnInit {
   public tablesActive: boolean = false
   public workTables: any
 
-  constructor(
-  ) {}
+  constructor() {}
 
   ngOnInit(): void {}
 

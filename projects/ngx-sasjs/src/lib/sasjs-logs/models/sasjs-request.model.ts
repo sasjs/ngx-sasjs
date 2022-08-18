@@ -1,4 +1,4 @@
-import { SASjsRequest } from "@sasjs/adapter"
+import { SASjsRequest } from '@sasjs/adapter'
 
 export interface SASjsRequestExtended extends SASjsRequest {
   parsedTimestamp?: string
