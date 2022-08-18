@@ -17,7 +17,14 @@
       "main"
     ]
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasjs/ngx-sasjs.git"
+  },
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",

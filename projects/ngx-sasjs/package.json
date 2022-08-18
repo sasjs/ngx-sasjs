@@ -1,5 +1,13 @@
 {
   "name": "@sasjs/ngx-sasjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasjs/ngx-sasjs.git"
+  },
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"
