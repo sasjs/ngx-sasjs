@@ -1,7 +1,6 @@
 # SASjs Basic UI Components for Angular
 
 UI Depends on Clarity Design
-
 Package includes:
 
 ### Header 
