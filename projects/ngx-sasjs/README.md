@@ -1,6 +1,19 @@
-# NgxSasjsLogs
+# SASjs Basic UI Components for Angular
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+UI Depends on Clarity Design
+Package includes:
+
+### Header 
+
+- Logo
+- Navigation links (configurable)
+- User dropdown (with configurable items and custom on click callbacks)
+
+### Login modal
+
+### SAS Logs modal
+
+---
 
 ## Code scaffolding
 
@@ -9,16 +22,16 @@ Run `ng generate component component-name --project ngx-sasjs` to generate a new
 
 ## Build
 
-Run `ng build ngx-sasjs` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run watch` to build the project in dev mode. The build artifacts will be stored in the `dist/` directory.
 
-## Publishing
+## Pack
 
-After building your library with `ng build ngx-sasjs`, go to the dist folder `cd dist/ngx-sasjs` and run `npm publish`.
+```
+cd dist/ngx-sasjs
+```
 
-## Running unit tests
+```
+npm pack
+```
 
-Run `ng test ngx-sasjs` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Use generated tarball file to install locally for test.
