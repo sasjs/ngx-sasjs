@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { SASjsConfig } from '@sasjs/adapter'
 import moment from 'moment'
 import { SASjsRequestExtended } from './models/sasjs-request.model'
+import { NgxSasjsService } from '../ngx-sasjs.service'
 
 @Component({
   selector: 'sasjs-logs',
@@ -11,6 +12,8 @@ import { SASjsRequestExtended } from './models/sasjs-request.model'
 export class SasjsLogsComponent implements OnInit {
   private _show: boolean = false
   private _sasjsRequests: SASjsRequestExtended[] = []
+
+  @Input() defaultDownloadBehaviour: boolean = true
 
   @Input()
   set show(value: boolean) {
@@ -43,7 +46,7 @@ export class SasjsLogsComponent implements OnInit {
   public tablesActive: boolean = false
   public workTables: any
 
-  constructor() {}
+  constructor(private ngxSasjsService: NgxSasjsService) {}
 
   ngOnInit(): void {}
 
@@ -149,13 +152,22 @@ export class SasjsLogsComponent implements OnInit {
 
   downloadLog(logFile: string) {
     this.onDownloadLog.emit(logFile)
+    const timestamp = new Date().valueOf()
+    this.ngxSasjsService.downloadTextFile(`logFile-${timestamp}`, logFile)
   }
 
   downloadSourceCode(sourceCode: string) {
     this.onDownloadSourceCode.emit(sourceCode)
+    const timestamp = new Date().valueOf()
+    this.ngxSasjsService.downloadTextFile(`sourceCode-${timestamp}`, sourceCode)
   }
 
   downloadGeneratedCode(generatedCode: string) {
     this.onDownloadGeneratedCode.emit(generatedCode)
+    const timestamp = new Date().valueOf()
+    this.ngxSasjsService.downloadTextFile(
+      `generatedCode-${timestamp}`,
+      generatedCode
+    )
   }
 }
